@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:"Century Ghotic";
+	line-height:20px;
+	font-size:16px;
+	color:#999;
+}
+
+.topo {
+	background-image: url(../imagens/fundo1.jpg);
+	width:940px;
+	height:150px;
+	border-bottom:10px solid #F90;
+	margin:auto;
+	border: 1px solid #333;
+}
+
+.logo {
+	float:left;
+	background: url(../imagens/lg1.png);
+	width:420px;
+	height:75px;
+	position:relative;
+	margin:60px 0 0 15px;
+	transition:all 0.4s ease-out;
+}
+
+.logo:hover{
+	transform: translateX(-10px);
+}
+
+.contato{
+	float:right;
+	width:300px;
+	height:40px;
+	position:relative;
+	margin:80px 15px 5px 15px;
+}
+
+.imgcontato{
+	float:right;
+	width:40px;
+	height:40px;
+	position:relative;
+	display:inline;
+	padding:5px 0 0 5px;
+	top:10px;
+	transition:all 0.4s ease-out;
+}
+
+.imgcontato:hover{
+	transform: translateY(-10px);
+}
+
+.face{
+	transform: translateY(-10px);
+}
+
+.menu {
+	width:940px;
+	margin:auto;
+	height:40px;
+	font-size:20px;
+	background:url(../imagens/barra_menu2.png);
+	border: 1px solid #000;
+}
+
+.menu ul li{
+	position:relative;
+	display:inline;
+	padding:5px 0 0 60px;
+	top:10px;
+}
+
+.menu ul li a{
+	text-decoration:none;
+	color:#f60;
+	font-family:"French Script MT";
+	font-weight:bold;
+	font-size:30px;
+
+}
+
+.menu ul li a:hover{
+	text-decoration:underline;
+	color:#F30;
+}
+
+.menu ul li a.active {
+	color: #FFF;
+	font-weight:bold;
+}
+
+/*Início da página inicial*/
+
+#fundo_inicial {
+	width:940px;
+	height:1100px;
+	margin:10px auto 20px auto;
+	background-color:#FFECF7;
+}
+
+.caixa_texto{
+	width:450px;
+	height:300px;
+	float:left;
+	margin:20px 40px 0 20px;
+	text-align:center;
+	font-style: italic;
+	line-height:40px;
+	font-size: 40px;
+}
+
+.caixa_texto h1{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serfi;
+	font-size:24px;
+	color:#F30;
+}
+
+.titulo{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serfi;
+	font-size:24px;	
+	color:#F30;
+	margin: 20px 0 0 0;
+	position: static;
+}
+
+.foto_home{
+	position: relative;
+	overflow: hidden;
+	border:5px double #FFF;
+}
+
+.foto_home#slide1{
+	float:right;
+	margin: 10px 100px 10px 20px;
+	width: 270px;
+	height: 300px;
+}
+
+.foto_home#slide2{
+	float:right;
+	margin: 10px 60px 10px 20px;
+	width: 270px;
+	height: 300px;
+}
+
+.foto_home#slide3{
+	float:right;
+	margin: 10px 100px 10px 20px;
+	width: 270px;
+	height: 300px;
+}
+
+.galeria{
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.foto{
+	position: absolute;
+	opacity: 00;
+	animation-name: animacao;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	left: 11px;
+	top: 4px;
+	height: 315px;
+}
+
+
+.foto_home h1{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serfi;
+	font-size:24px;
+	color:#F30;
+}
+
+.regua{
+	border:double 1px #CCC;
+	margin: 20px;
+	widht:900px;
+	clear:both;
+}
+
+.caixa_texto2{
+	width:450px;
+	height:300px;
+	float:right;
+	margin:20px 20px 20px 20px;
+	text-align:center;
+	line-height:20px;
+	font-style: italic;
+	line-height:40px;
+	font-size: 40px;
+}
+
+.caixa_texto2 h1{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serfi;
+	font-size:24px;
+	color:#F30;
+}
+
+.caixa_texto3{
+	width:450px;
+	height:300px;
+	float:right;
+	margin:20px 20px 20px 20px;
+	text-align:center;
+	line-height:20px;
+}
+
+.caixa_texto3 h1{
+	font-family:"Palatino Linotype", "Book Antiqua";
+	font-size:24px;
+	color:#F30;
+}
+
+.caixa_texto4{
+	width:450px;
+	height:300px;
+	float:left;
+	margin:20px 40px 0 20px;
+	text-align:center;
+	line-height:20px;
+	font-size: 25px;
+	font-style: italic;;
+}
+
+.caixa_texto4 h1{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serfi;
+	font-size:24px;
+	color:#F30;
+}
+
+.rodape {
+	width:940px;
+	margin:auto;
+	height:40px;
+	font-size:18px;
+	background: url(../imagens/fundo1.jpg);
+	clear:both;
+}
+
+
+/*fim da página inicial*/
+
+/*Início da página portifolio*/
+
+#fundo_portifolio {
+	width:940px;
+	height:1070px;
+	margin:10px auto 20px auto;
+	background-color:#FFECF7;
+	border: 1px solid #ccc;
+}
+
+.box_txt3{
+	width:900px;
+	height:150px;
+	float:left;
+	position:relative;
+	margin:15px;
+}
+
+.caixa_texto3{
+	width:900px;
+	height:20px;
+	float:right;
+	margin:10px;
+	line-height:20px;
+}
+
+.caixa_texto3 h1{
+	font-family:"French Script MT", "Book Antiqua", Palatino, serfi;
+	font-size:40px;
+	font-weight:bold;
+	color:#F30;
+}
+
+.caixa_texto3 p{
+	text-align:justify;
+}
+
+.regua2{
+	border:solid 1px #CCC;
+	margin:10px;
+	widht:900px;
+	clear:both;
+}
+
+.box_imagens {
+	position:relative;
+	width:900px;
+	height:970px;
+	margin:20px auto auto 20px;
+	float:left;
+	border:5px double #FAD7FF;
+}
+
+.box_interior{
+	border:5px double #FAD7FF;
+	margin:5px;
+	transition:all 0.4s ease-out;
+	box-shadow: 1px 1px 4px black;
+}
+
+.box_interior:hover{
+	transform:translateY(-10px);
+	
+}
+.rodape_port {
+	width:940px;
+	margin:auto;
+	height:40px;
+	margin:30px 0 0 0;
+	font-size:18px;
+	background: url(../imagens/fundo1.jpg);
+	clear:both;
+}
+
+
+/*Fim da página portifolio*/
+
+/*Início da manutenção*/
+
+#fundo_manutencao {
+	width:940px;
+	height:370px;
+	margin:10px auto 20px auto;
+	background-color:#FFECF7;
+	border: 1px solid #ccc;
+}
+
+/*Fim da manutenção*/
+
+/*Início da contato*/
+
+#fundo_contato {
+	width:940px;
+	height:550px;
+	position:relative;
+	margin:10px auto 20px auto;
+	background-color:#FFECF7;
+	border: 1px solid #ccc;
+}
+
+.formulario{
+	width:430px;
+	height:350px;
+	float:left;
+	position:relative;
+	margin:15px;
+	border: 5px double #FAD7FF;
+	color:#FFFDFF;
+}
+
+.form_titulo{
+	width:200px;
+	height:25px;
+	float:left;
+	font-family:"French Script MT", "Book Antiqua", Palatino, serfi;
+	font-size:30px;
+	font-weight:bold;
+	color:#F30;
+	margin:15px 10px 0 120px;
+}
+
+.form_titulo2{
+	width:380px;
+	height:25px;
+	float:right;
+	font-family:"French Script MT", "Book Antiqua", Palatino, serfi;
+	font-size:30px;
+	font-weight:bold;
+	color:#F30;
+	margin:15px 10px 0 10px;
+}
+
+.mapa {
+	width:430px;
+	height:350px;
+	float:right;
+	position:relative;
+	margin:15px;
+	border: 5px double #FAD7FF;
+}
+
+.rodape_contato{
+	width:940px;
+	margin:auto;
+	height:40px;
+	margin:0 auto 0 auto;
+	font-size:18px;
+	background: url(../imagens/fundo1.jpg);
+	clear:both;
+}
+	
+/*Início da contato*/
